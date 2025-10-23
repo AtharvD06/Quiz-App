@@ -1,10 +1,10 @@
 .Container{
-    width: 640px;
-    margin:auto;
-    padding: 150px;
+    width: 90%;
+    max-width: 640px;
+    margin: auto;
     margin-top: 150px;
     background-color: white;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
@@ -55,3 +55,50 @@
 .Container .wrong { background-color: #FFCCCB;
     border-color : #FF0000;
  }
+@media screen and (max-width: 768px) {
+    .Container {
+        width: 95%;
+        margin-top: 50px;
+        padding: 20px 25px;
+    }
+
+    .Container h2 {
+        font-size: 22px;
+    }
+
+    .Container ul li {
+        height: 60px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .Container button {
+        width: 200px;
+        height: 55px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Container {
+        width: 100%;
+        margin-top: 30px;
+        padding: 15px 20px;
+    }
+
+    .Container h2 {
+        font-size: 20px;
+    }
+
+    .Container ul li {
+        height: 50px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .Container button {
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
